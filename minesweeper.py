@@ -19,7 +19,7 @@ def display_solution(board):
     for row in board:
         print("|", end=" ")
         for col in row:
-            if col == 1:
+            if col == -1:
                 print("X", end=" | ")
             else:
                 print(str(col), end=" | ")
@@ -55,7 +55,7 @@ def main():
 
     # prompt user for number of mines
     num_mines = 26
-    while num_mines > 25:
+    while num_mines > 25 or num_mines < 1:
         num_mines = int(input("Enter number of mines (max 25): "))
         if num_mines > 25:
             print("Invalid input. Max number of mines is 25. Please try again.")
@@ -97,7 +97,7 @@ def main():
             board_user[row][col] = check_mines(board, row, col)
             guess += 1
             display_board(board_user)
-    print("Congratulations! You won!")
+    print("\nCongratulations! You won!")
     display_solution(board_user)
     
 if __name__ == "__main__":
