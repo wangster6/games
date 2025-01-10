@@ -14,10 +14,6 @@ This is a terminal-based implementation of the classic Minesweeper game. Players
 - Python 3.x installed on your system.
 <br>
 
-## Technologies Used
-- **Python:** Handles all game logic, random mine placement, user input, and terminal-based board updates.
-<br>
-
 ## Getting Started
 1. Clone this repository to your local machine.
 2. Navigate to the project directory in your terminal.
@@ -25,6 +21,10 @@ This is a terminal-based implementation of the classic Minesweeper game. Players
    ```bash
    python minesweeper.py
 <br>
+
+## Potential Improvements
+- Create an interactive UI for the game.
+- Turn the game into a web-app and host it.
 
 ## Contributing
 Contributions to this project are welcome! Feel free to submit issues or pull requests.
